@@ -6,6 +6,8 @@ import os
 import time
 
 import requests
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += "HIGH:!DH:!aNULL"
+
 import six
 from colorama import Fore, Style, init as init_colorama
 
